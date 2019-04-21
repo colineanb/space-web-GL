@@ -1,0 +1,182 @@
+*
+    margin 0
+    padding 0
+    font-family 'Montserrat'
+
+html,
+body
+    position fixed
+    top 0
+    left 0
+    width 100%
+    height 100%
+
+
+canvas
+    position absolute
+    top 0
+    left 0
+    width 100%
+    height 100%
+
+h5
+
+    color #f2f2f2
+    font-family 'Montserrat', sans-serif
+    font-weight bold
+    position absolute
+    left 50%
+    z-index 2
+    transform translateX(-50%)
+    margin-top 5% 
+    animation title 3s ease
+    font-size 25px 
+    display block
+
+@keyframes title 
+      0% {transform :translateY(-100px)}
+    100% {transform :translateY(400px)}
+    
+  
+h1
+
+    color #f2f2f2
+    font-family 'Montserrat', sans-serif
+    font-weight bold
+    position absolute
+    left 50%
+    z-index 2
+    transform translateX(-50%)
+    margin-top 5% 
+    animation title 5s ease
+    font-size 25px 
+    display none
+
+
+.planet
+    width 100%
+    height auto
+    position absolute
+    top 93%
+    left 11%
+
+.planets
+    position absolute
+    top 90%
+    z-index 1000
+ 
+   
+h2
+    z-index 1000
+    color white
+    font-size  15px
+    padding-left 15px
+    padding-right 15px
+    cursor pointer
+    opacity 0.5
+    display none
+h2:hover
+    opacity 1
+.mercury 
+    left  0%
+.venus 
+    left 10%
+.earth
+   left 20%
+.mars
+    left 30%
+.jupiter
+   left 40%
+.saturn
+   left 50%
+.uranus
+   left 60%
+.neptune
+    left 70%
+
+
+
+
+.bar 
+    width  2px
+    height 260px
+    background #9873b9
+    position absolute
+    z-index 2000
+    top 23% 
+    left 1%
+    visibility hidden
+    transform-origin top 
+    opacity  0.5
+
+.bar.active 
+    visibility visible
+    animation bar 2s linear
+  
+.mercury-content,
+.venus-content,
+.earth-content,
+.mars-content,
+.jupiter-content,
+.saturn-content,
+.uranus-content,
+.neptune-content
+    width 350px
+    height 400px
+    position absolute 
+    left:-4%
+    top 20% 
+    transition 2s transform 
+    transform translateX(100px)
+    z-index 1000
+    // background #011326
+    border-radius 35px
+    visibility hidden
+
+.mercury-content.active,
+.venus-content.active,
+.earth-content.active,
+.mars-content.active,
+.jupiter-content.active,
+.saturn-content.active,
+.uranus-content.active,
+.neptune-content.active
+    visibility visible
+    animation planet 1s ease
+   
+
+    h3
+        color #9873b9
+        margin-top 10%
+        margin-bottom 2%
+        font-weight bold
+        font-size 30px
+
+    h4
+        color #D5AAEE
+        margin-bottom 8%
+        margin-top 6%
+        font-style italic
+        margin-left 7%
+        
+    ul 
+ 
+        li 
+            list-style none
+            line-height 30px
+            color white
+            margin-left 10%  
+            font-weight lighter
+            font-size 14px
+
+
+@keyframes planet 
+    0% {transform :translateX(-500px)}
+    100% {transform :translateX(100px)}
+    
+  
+@keyframes bar
+    0% {transform :scale(0)}
+    100% {transform :scale(1)}
+    
+  
